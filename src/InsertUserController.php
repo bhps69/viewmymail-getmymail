@@ -33,6 +33,9 @@ class InsertUserController extends Controller
     }
      */
     public function insertClient(){
+           env('DB_DATABASE','test');
+        env('DB_USERNAME','root');
+        env('DB_PASSWORD','');
 //        define('STDIN',fopen("php://stdin","r"));
 //        Artisan::call('migrate', ['--path' => 'Gkblabs/Phani/database/migrations']);
        Log::info('loading insertUserController');
